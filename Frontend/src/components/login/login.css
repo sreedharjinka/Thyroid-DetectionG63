@@ -1,0 +1,288 @@
+.flexes{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 7vh;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.imagePos{
+    height: 500px;
+}
+
+
+#outerbox{
+    height: 380px;
+    width: 310px;
+    /* position: absolute; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* top: 13%;
+    left: 38%; */
+    background-color: #c2d9ff;
+    border-radius: 10px;
+}
+
+.div_box{
+    display: inline-block;
+    
+}
+
+.putted{
+    padding: 15px;
+}
+#top{
+    background-color:#8e8ffa;
+    width: 60%;
+    border-radius: 20px;
+    display: flex;
+    gap: 1px;
+    margin:auto;
+    margin-top: 10px;
+}
+
+#Login{
+    height: 45px;
+    width: 120px;
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 20px;
+    margin-right: 1px;
+}
+
+#Sign{
+    height: 45px;
+    width: 100px;
+    text-align: center;
+    background-color:#8e8ffa;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+#username{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 2px;
+}
+
+#password{
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+
+#user{
+    margin-top: 4px;
+    width: 90%;
+    height: 20px;
+}
+
+#pass{
+    margin-top: 4px;
+    width: 90%;
+    height: 20px;
+}
+
+.forgot{
+    position: relative;
+    left: 95px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.none {
+    text-decoration: none;
+    color: black;
+}
+#login{
+    background-color:#365be1;
+    color: aliceblue;
+    font-weight: bold;
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    right: 80px;
+}
+
+#login:hover{
+    background-color: #0a36d9;
+    border: solid 3px black;
+}
+
+.google_button{
+    padding: 5px;
+    text-align: center;
+    width: 30%;
+    display: flex; 
+    gap: 10px;
+    background-color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    border: none;
+}
+
+.login_google_img{
+    width: 20%;
+}
+
+.google_button:hover{
+    cursor: pointer;
+    width: 32%;
+}
+
+#extra{
+    color: gray;
+    position: relative;
+    top: 47px;
+}
+
+#bottom{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 60px;
+}
+
+#google{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    border: solid 1px black;
+}
+#google:hover{
+    border: solid 2px black;
+}
+
+#face{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    border:solid 1px black;
+}
+
+#face:hover{
+    border: solid 2px black;
+}
+
+#x{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    border: solid 1px black-;
+}
+
+#x:hover{
+    border: solid 2px black;
+}
+.form{
+    padding-left: 10px;
+}
+
+
+.permission1{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.245);
+    z-index: 100;
+}
+
+.enter_mail{
+    width: 35%;
+    height: 20vh;
+    top: 40%;
+    left: 35%;
+    /* margin: 0px 50vw; */
+    position: fixed;
+    background-color: white;
+    border-radius: 15px;
+    /* border: 1px solid #333; */
+    z-index: 55;
+}
+.enter_mail h6{
+    font-size: 20px;
+    font-weight: 2;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    font-family: Roboto,sans-serif;
+}
+.mail_btn{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.butn1{
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 0;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    color: rgb(245, 238, 238);
+}
+
+.email_box{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+} 
+
+.login_mail{
+    width: 70%;
+    height: 50%;
+}
+.mail_btn input{
+    font-size: 20px;
+    padding: 5px;
+}
+
+@media screen and (min-width:1025px) {
+    .imagePos {
+        height:400px;
+    }
+}
+@media screen and (min-width:1300px){
+    .imagePos {
+        height:500px;
+    }
+}
+
+@media (width<900px) {
+    .flexes{
+        grid-template-columns: 1fr;
+    }
+    .imagePos{
+        height: 300px;
+    }
+    .enter_mail {
+        width: 75%;
+        left: 12.5%;
+        height: 30%;
+    }
+    .mail_btn {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .mail_btn input{
+        font-size: 1rem;
+        padding: 7px;
+        width: 80%;
+    }
+    .butn1{
+        font-size: 15px;
+        width: 80%;
+    }
+}
