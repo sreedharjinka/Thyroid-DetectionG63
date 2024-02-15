@@ -42,7 +42,7 @@ function Form(props){
             ...formData,
         });
         try {
-            const response = await fetch("http://localhost:5000/model/prediction",{
+            const response = await fetch("https://thyro-aid-prediction.onrender.com/prediction",{
                 method: "POST",
                 headers:{
                     "Content-Type": "application/json",
