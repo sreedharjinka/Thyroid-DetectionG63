@@ -50,11 +50,15 @@ function Form(props){
                 body: JSON.stringify(formData),
             });
             const result = await response.json();
-            console.log(result.msg);
+            console.log(result.error);
+            if(response.ok){
+                alert(result.prediction);
+                localStorage.setItem("result",result.prediction);
+                navigate("/outputPage");
+            }
         } catch (error) {
-            console.log(error);
+            alert(error);
         }
-        navigate("/outputPage");
         console.log(formData);
     }
 
